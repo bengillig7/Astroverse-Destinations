@@ -1,0 +1,192 @@
+/* Reset & basics */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: #f5f7fa;
+  color: #333;
+}
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header/Nav */
+header {
+  background: #003366;
+  color: white;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links li a {
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+.nav-links li a.active,
+.nav-links li a:hover {
+  background: #005bb5;
+}
+
+/* Main content */
+main {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+/* Hero Section on Home */
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Intro Section on Home */
+.intro {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.intro p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+.btn {
+  display: inline-block;
+  background: #0077cc;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background: #005fa3;
+}
+
+/* Parks list */
+.parks-list article {
+  background: white;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+.parks-list h2 {
+  color: #003366;
+  margin-bottom: 15px;
+}
+.parks-list ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.parks-list ul li {
+  margin-bottom: 8px;
+}
+
+/* About section */
+.about-section p {
+  margin-bottom: 15px;
+}
+.about-section h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #003366;
+}
+
+/* Contact form */
+.contact-section form {
+  max-width: 500px;
+  background: white;
+  padding: 20px 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+.contact-section label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  margin-top: 15px;
+}
+.contact-section input,
+.contact-section textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.contact-section button {
+  margin-top: 20px;
+  background: #0077cc;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.contact-section button:hover {
+  background: #005fa3;
+}
+
+/* Footer */
+footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  user-select: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
